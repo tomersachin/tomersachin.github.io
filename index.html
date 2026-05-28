@@ -1,10 +1,242 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Sachin Tomer Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Sachin Tomer | Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #f4f6fb;
+  color: #1f2937;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+
+.hero-text h1 {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #4f46e5;
+}
+
+.hero-text p {
+  color: #6b7280;
+  font-size: 17px;
+}
+
+/* BADGES */
+.badges span {
+  display: inline-block;
+  background: #e0e7ff;
+  color: #4338ca;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 5px 8px 0 0;
+}
+
+/* BUTTONS */
+.buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background: #4f46e5;
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid #ddd;
+}
+
+/* IMAGE */
+.hero-img img {
+  width: 260px;
+  border-radius: 16px;
+}
+
+/* SECTION */
+section {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+
+.section-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: #4f46e5;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  border-radius: 2px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #4f46e5;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+}
+</style>
 </head>
+
 <body>
-  <h1>Hello, I'm Sachin 👋</h1>
-  <p>Developer | SharePoint | Power Platform</p>
+
+<nav>
+  <strong class="highlight">Sachin</strong>
+  <div>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+  <!-- LEFT -->
+  <div class="hero-text">
+    <h1>Hi, I'm <span class="highlight">Sachin</span> 👋</h1>
+
+    <p>
+      Senior Developer with 11+ years of experience in SharePoint,
+      Power Platform, and Azure. I build scalable enterprise solutions.
+    </p>
+
+    <div class="badges">
+      <span>Power Platform</span>
+      <span>SharePoint</span>
+      <span>Azure</span>
+      <span>SPFx</span>
+    </div>
+
+    <div class="buttons">
+      <a href="#" class="btn btn-primary">GitHub</a>
+      <a href="#" class="btn btn-outline">LinkedIn</a>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="hero-img">
+    <img src="https://via.placeholder.com/300" alt="profile">
+  </div>
+
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p style="color:#6b7280;">
+    I specialize in enterprise-grade application development using SPFx,
+    Power Apps, Power Automate, and Azure integrations, focusing on scalability
+    and performance.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="grid">
+    <div class="card">SharePoint & SPFx</div>
+    <div class="card">Power Apps & Automate</div>
+    <div class="card">Azure Functions</div>
+    <div class="card">React & TypeScript</div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h4>Workflow Automation</h4>
+      <p>Automated approvals using Power Automate.</p>
+    </div>
+
+    <div class="card">
+      <h4>SPFx Solutions</h4>
+      <p>Custom SharePoint components.</p>
+    </div>
+
+    <div class="card">
+      <h4>Azure Integration</h4>
+      <p>Serverless backend solutions.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Sachin Tomer
+</footer>
+
 </body>
 </html>
